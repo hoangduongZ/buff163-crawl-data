@@ -1,0 +1,1550 @@
+{
+  "code": "OK",
+  "data": {
+    "page_num": 1,
+    "page_size": 20,
+    "total_page": 1605,
+    "total_count": 32083,
+    "items": [
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 900464,
+        "name": "Recoil Case",
+        "market_hash_name": "Recoil Case",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/Recoil%20Case",
+        "sell_reference_price": "2.6",
+        "sell_min_price": "2.59",
+        "buy_max_price": "2.6",
+        "sell_num": 17237,
+        "buy_num": 12352,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://g.fp.ps.netease.com/market/file/62bf6ac991df682427d38ac4MbtVXRUV04?fop=imageView/6/f/webp/q/75",
+          "steam_price": "0.63",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 594,
+                "category": "rarity",
+                "internal_name": "common",
+                "localized_name": "Base Grade"
+              },
+              "type": {
+                "id": 572,
+                "category": "type",
+                "internal_name": "csgo_type_weaponcase",
+                "localized_name": "Weapon Cases"
+              },
+              "category": {
+                "id": 664,
+                "category": "category",
+                "internal_name": "csgo_type_weaponcase",
+                "localized_name": "Weapon Cases"
+              }
+            }
+          },
+          "steam_price_cny": "4.31",
+          "original_icon_url": "https://g.fp.ps.netease.com/market/file/62bf6ac63edd58bf7fcde902o3HDtrvt04?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "2.59",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "Recoil Case",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 0,
+        "min_rent_unit_price": "0",
+        "min_security_price": "0",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 28,
+        "pre_sell_min_price": "2.69",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 36165,
+        "name": "P90 | Grim (Minimal Wear)",
+        "market_hash_name": "P90 | Grim (Minimal Wear)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/P90%20%7C%20Grim%20%28Minimal%20Wear%29",
+        "sell_reference_price": "2.15",
+        "sell_min_price": "2.15",
+        "buy_max_price": "2",
+        "sell_num": 375,
+        "buy_num": 476,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/660d6fc59bc38e8a9ce57b91x7ay9aJi05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "0.5",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 511,
+                "category": "exterior",
+                "internal_name": "wearcategory1",
+                "localized_name": "Minimal Wear"
+              },
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 589,
+                "category": "rarity",
+                "internal_name": "rare_weapon",
+                "localized_name": "Mil-Spec Grade"
+              },
+              "type": {
+                "id": 578,
+                "category": "type",
+                "internal_name": "csgo_type_smg",
+                "localized_name": "SMGs"
+              },
+              "weapon": {
+                "id": 543,
+                "category": "weapon",
+                "internal_name": "weapon_p90",
+                "localized_name": "P90"
+              },
+              "category": {
+                "id": 635,
+                "category": "category",
+                "internal_name": "weapon_p90",
+                "localized_name": "P90"
+              }
+            }
+          },
+          "steam_price_cny": "3.42",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/660d6fc569ef1752ddd9caf2LwHmC61X05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "2.14",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "P90 | Grim",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 0,
+        "min_rent_unit_price": "0",
+        "min_security_price": "0",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 0,
+        "pre_sell_min_price": "0",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 1134262,
+        "name": "UMP-45 | Fragment (Factory New)",
+        "market_hash_name": "UMP-45 | Fragment (Factory New)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/UMP-45%20%7C%20Fragment%20%28Factory%20New%29",
+        "sell_reference_price": "7.43",
+        "sell_min_price": "7.43",
+        "buy_max_price": "6.9",
+        "sell_num": 125,
+        "buy_num": 14,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/69b212891fc3f4329c8e9081D1s6Eq4g07?fop=imageView/6/f/webp/q/75",
+          "steam_price": "1.65",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 510,
+                "category": "exterior",
+                "internal_name": "wearcategory0",
+                "localized_name": "Factory New"
+              },
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 589,
+                "category": "rarity",
+                "internal_name": "rare_weapon",
+                "localized_name": "Mil-Spec Grade"
+              },
+              "type": {
+                "id": 578,
+                "category": "type",
+                "internal_name": "csgo_type_smg",
+                "localized_name": "SMGs"
+              },
+              "weapon": {
+                "id": 551,
+                "category": "weapon",
+                "internal_name": "weapon_ump45",
+                "localized_name": "UMP-45"
+              },
+              "category": {
+                "id": 637,
+                "category": "category",
+                "internal_name": "weapon_ump45",
+                "localized_name": "UMP-45"
+              }
+            }
+          },
+          "steam_price_cny": "11.28",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/69b2128747b63f00d1ba366fFXz5gfMa07?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "7.42",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "UMP-45 | Fragment",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 0,
+        "min_rent_unit_price": "0",
+        "min_security_price": "0",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 1,
+        "pre_sell_num": 13,
+        "pre_sell_min_price": "7.49",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 781674,
+        "name": "StatTrak™ XM1014 | Entombed (Field-Tested)",
+        "market_hash_name": "StatTrak™ XM1014 | Entombed (Field-Tested)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20XM1014%20%7C%20Entombed%20%28Field-Tested%29",
+        "sell_reference_price": "33.61",
+        "sell_min_price": "33.61",
+        "buy_max_price": "32.1",
+        "sell_num": 77,
+        "buy_num": 24,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f573b255620302226d247cTZyBQcle05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "7.9",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 512,
+                "category": "exterior",
+                "internal_name": "wearcategory2",
+                "localized_name": "Field-Tested"
+              },
+              "quality": {
+                "id": 518,
+                "category": "quality",
+                "internal_name": "strange",
+                "localized_name": "StatTrak™"
+              },
+              "rarity": {
+                "id": 591,
+                "category": "rarity",
+                "internal_name": "legendary_weapon",
+                "localized_name": "Classified"
+              },
+              "type": {
+                "id": 579,
+                "category": "type",
+                "internal_name": "csgo_type_shotgun",
+                "localized_name": "Shotguns"
+              },
+              "weapon": {
+                "id": 553,
+                "category": "weapon",
+                "internal_name": "weapon_xm1014",
+                "localized_name": "XM1014"
+              },
+              "category": {
+                "id": 643,
+                "category": "category",
+                "internal_name": "weapon_xm1014",
+                "localized_name": "XM1014"
+              }
+            }
+          },
+          "steam_price_cny": "54.01",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f573b1054868ab2d5857b7SD7hADBZ05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "33.51",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "StatTrak™ XM1014 | Entombed",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.15",
+        "rent_num": 1,
+        "min_rent_unit_price": "0.15",
+        "min_security_price": "36",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 0,
+        "pre_sell_min_price": "0",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 42346,
+        "name": "eSports 2013 Winter Case",
+        "market_hash_name": "eSports 2013 Winter Case",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/eSports%202013%20Winter%20Case",
+        "sell_reference_price": "129.9",
+        "sell_min_price": "129.9",
+        "buy_max_price": "115",
+        "sell_num": 160,
+        "buy_num": 57,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://g.fp.ps.netease.com/market/file/5a9fc37f5e602779217e53708Oecwcv7?fop=imageView/6/f/webp/q/75",
+          "steam_price": "25.9",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 594,
+                "category": "rarity",
+                "internal_name": "common",
+                "localized_name": "Base Grade"
+              },
+              "type": {
+                "id": 572,
+                "category": "type",
+                "internal_name": "csgo_type_weaponcase",
+                "localized_name": "Weapon Cases"
+              },
+              "category": {
+                "id": 664,
+                "category": "category",
+                "internal_name": "csgo_type_weaponcase",
+                "localized_name": "Weapon Cases"
+              }
+            }
+          },
+          "steam_price_cny": "177.06",
+          "original_icon_url": "https://g.fp.ps.netease.com/market/file/5a7acc1ca7f25206458719e3jxQsHqc7?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "129.4",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "eSports 2013 Winter Case",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.07",
+        "rent_num": 0,
+        "min_rent_unit_price": "0",
+        "min_security_price": "0",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 0,
+        "pre_sell_min_price": "0",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 968023,
+        "name": "PP-Bizon | Cold Cell (Factory New)",
+        "market_hash_name": "PP-Bizon | Cold Cell (Factory New)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/PP-Bizon%20%7C%20Cold%20Cell%20%28Factory%20New%29",
+        "sell_reference_price": "1.77",
+        "sell_min_price": "1.77",
+        "buy_max_price": "1.7",
+        "sell_num": 1120,
+        "buy_num": 1356,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/66fdef111d06a820163b6770uYN4A2Bt05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "0.46",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 510,
+                "category": "exterior",
+                "internal_name": "wearcategory0",
+                "localized_name": "Factory New"
+              },
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 592,
+                "category": "rarity",
+                "internal_name": "uncommon_weapon",
+                "localized_name": "Industrial Grade"
+              },
+              "type": {
+                "id": 578,
+                "category": "type",
+                "internal_name": "csgo_type_smg",
+                "localized_name": "SMGs"
+              },
+              "weapon": {
+                "id": 544,
+                "category": "weapon",
+                "internal_name": "weapon_bizon",
+                "localized_name": "PP-Bizon"
+              },
+              "category": {
+                "id": 639,
+                "category": "category",
+                "internal_name": "weapon_bizon",
+                "localized_name": "PP-Bizon"
+              }
+            }
+          },
+          "steam_price_cny": "3.14",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/66fdef0f5e35d3570c662522YAF0roiX05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "1.76",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "PP-Bizon | Cold Cell",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 2,
+        "min_rent_unit_price": "0.02",
+        "min_security_price": "1.66",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 1,
+        "pre_sell_num": 6,
+        "pre_sell_min_price": "1.79",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 1115930,
+        "name": "Five-SeveN | Sky Blue (Factory New)",
+        "market_hash_name": "Five-SeveN | Sky Blue (Factory New)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/Five-SeveN%20%7C%20Sky%20Blue%20%28Factory%20New%29",
+        "sell_reference_price": "2.48",
+        "sell_min_price": "2.48",
+        "buy_max_price": "2.3",
+        "sell_num": 1024,
+        "buy_num": 181,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/67eb4d58fee1fc98098ece72dktebcl206?fop=imageView/6/f/webp/q/75",
+          "steam_price": "0.51",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 510,
+                "category": "exterior",
+                "internal_name": "wearcategory0",
+                "localized_name": "Factory New"
+              },
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 592,
+                "category": "rarity",
+                "internal_name": "uncommon_weapon",
+                "localized_name": "Industrial Grade"
+              },
+              "type": {
+                "id": 576,
+                "category": "type",
+                "internal_name": "csgo_type_pistol",
+                "localized_name": "Pistols"
+              },
+              "weapon": {
+                "id": 528,
+                "category": "weapon",
+                "internal_name": "weapon_fiveseven",
+                "localized_name": "FN57"
+              },
+              "category": {
+                "id": 616,
+                "category": "category",
+                "internal_name": "weapon_fiveseven",
+                "localized_name": "FN57"
+              }
+            }
+          },
+          "steam_price_cny": "3.49",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/67eb4d57a780352b93369d5e5thY3d4B06?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "2.47",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "Five-SeveN | Sky Blue",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 5,
+        "min_rent_unit_price": "0.02",
+        "min_security_price": "3.6",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 1,
+        "pre_sell_min_price": "2.5",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 45492,
+        "name": "★ Driver Gloves | Overtake (Field-Tested)",
+        "market_hash_name": "★ Driver Gloves | Overtake (Field-Tested)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/%E2%98%85%20Driver%20Gloves%20%7C%20Overtake%20%28Field-Tested%29",
+        "sell_reference_price": "400",
+        "sell_min_price": "400",
+        "buy_max_price": "400",
+        "sell_num": 194,
+        "buy_num": 34,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f817da4870155155cf0ad7J6EPQGOd05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "89.95",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 512,
+                "category": "exterior",
+                "internal_name": "wearcategory2",
+                "localized_name": "Field-Tested"
+              },
+              "quality": {
+                "id": 519,
+                "category": "quality",
+                "internal_name": "unusual",
+                "localized_name": "★"
+              },
+              "rarity": {
+                "id": 598,
+                "category": "rarity",
+                "internal_name": "ancient",
+                "localized_name": "Extraordinary"
+              },
+              "type": {
+                "id": 587,
+                "category": "type",
+                "internal_name": "type_hands",
+                "localized_name": "Gloves"
+              },
+              "category": {
+                "id": 651,
+                "category": "category",
+                "internal_name": "weapon_driver_gloves",
+                "localized_name": "Driver Gloves"
+              }
+            }
+          },
+          "steam_price_cny": "614.93",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f817d9c79359fd9b4bfd50CFTxeJ6s05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "399.5",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "★ Driver Gloves | Overtake",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.36",
+        "rent_num": 10,
+        "min_rent_unit_price": "0.36",
+        "min_security_price": "490",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 4,
+        "pre_sell_min_price": "440",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 33874,
+        "name": "AK-47 | Blue Laminate (Minimal Wear)",
+        "market_hash_name": "AK-47 | Blue Laminate (Minimal Wear)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/AK-47%20%7C%20Blue%20Laminate%20%28Minimal%20Wear%29",
+        "sell_reference_price": "117.38",
+        "sell_min_price": "117.38",
+        "buy_max_price": "111",
+        "sell_num": 1052,
+        "buy_num": 48,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f57b57d58ed9e4a1b03fb95lMqJZGc05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "24",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 511,
+                "category": "exterior",
+                "internal_name": "wearcategory1",
+                "localized_name": "Minimal Wear"
+              },
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 590,
+                "category": "rarity",
+                "internal_name": "mythical_weapon",
+                "localized_name": "Restricted"
+              },
+              "type": {
+                "id": 570,
+                "category": "type",
+                "internal_name": "csgo_type_rifle",
+                "localized_name": "Rifles"
+              },
+              "weapon": {
+                "id": 521,
+                "category": "weapon",
+                "internal_name": "weapon_ak47",
+                "localized_name": "AK-47"
+              },
+              "category": {
+                "id": 626,
+                "category": "category",
+                "internal_name": "weapon_ak47",
+                "localized_name": "AK-47"
+              }
+            }
+          },
+          "steam_price_cny": "164.07",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f57b56268a9005fd470015PRXA4oVi05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "116.88",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "AK-47 | Blue Laminate",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.2",
+        "rent_num": 19,
+        "min_rent_unit_price": "0.2",
+        "min_security_price": "144",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 2,
+        "pre_sell_num": 6,
+        "pre_sell_min_price": "115",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 956398,
+        "name": "Kilowatt Case",
+        "market_hash_name": "Kilowatt Case",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/Kilowatt%20Case",
+        "sell_reference_price": "1.6",
+        "sell_min_price": "1.59",
+        "buy_max_price": "1.6",
+        "sell_num": 29894,
+        "buy_num": 22066,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65c2d1e641a6a6bbcafdd84cscGrKHvL05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "0.39",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 594,
+                "category": "rarity",
+                "internal_name": "common",
+                "localized_name": "Base Grade"
+              },
+              "type": {
+                "id": 572,
+                "category": "type",
+                "internal_name": "csgo_type_weaponcase",
+                "localized_name": "Weapon Cases"
+              },
+              "category": {
+                "id": 664,
+                "category": "category",
+                "internal_name": "csgo_type_weaponcase",
+                "localized_name": "Weapon Cases"
+              }
+            }
+          },
+          "steam_price_cny": "2.67",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65c2d1e4cfc7f33dc7461ee3AWlB7K4x05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "1.59",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "Kilowatt Case",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 0,
+        "min_rent_unit_price": "0",
+        "min_security_price": "0",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 118,
+        "pre_sell_min_price": "1.68",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 886675,
+        "name": "G3SG1 | Dream Glade (Factory New)",
+        "market_hash_name": "G3SG1 | Dream Glade (Factory New)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/G3SG1%20%7C%20Dream%20Glade%20%28Factory%20New%29",
+        "sell_reference_price": "39.3",
+        "sell_min_price": "39.28",
+        "buy_max_price": "39.3",
+        "sell_num": 378,
+        "buy_num": 33,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f579baf3f45bcf87acaa3781ijS9i005?fop=imageView/6/f/webp/q/75",
+          "steam_price": "9.5",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 510,
+                "category": "exterior",
+                "internal_name": "wearcategory0",
+                "localized_name": "Factory New"
+              },
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 590,
+                "category": "rarity",
+                "internal_name": "mythical_weapon",
+                "localized_name": "Restricted"
+              },
+              "type": {
+                "id": 571,
+                "category": "type",
+                "internal_name": "csgo_type_sniperrifle",
+                "localized_name": "Sniper Rifles"
+              },
+              "weapon": {
+                "id": 529,
+                "category": "weapon",
+                "internal_name": "weapon_g3sg1",
+                "localized_name": "G3SG1"
+              },
+              "category": {
+                "id": 633,
+                "category": "category",
+                "internal_name": "weapon_g3sg1",
+                "localized_name": "G3SG1"
+              }
+            }
+          },
+          "steam_price_cny": "64.94",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f579b908572fdfa2802d110wxIi5km05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "39.2",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "G3SG1 | Dream Glade",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 0,
+        "min_rent_unit_price": "0",
+        "min_security_price": "0",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 1,
+        "pre_sell_min_price": "75",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 857564,
+        "name": "Desert Eagle | Trigger Discipline (Field-Tested)",
+        "market_hash_name": "Desert Eagle | Trigger Discipline (Field-Tested)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/Desert%20Eagle%20%7C%20Trigger%20Discipline%20%28Field-Tested%29",
+        "sell_reference_price": "4.8",
+        "sell_min_price": "4.8",
+        "buy_max_price": "4.8",
+        "sell_num": 1697,
+        "buy_num": 134,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f586ae26b2e61de20bbd71axYwLVp205?fop=imageView/6/f/webp/q/75",
+          "steam_price": "1.17",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 512,
+                "category": "exterior",
+                "internal_name": "wearcategory2",
+                "localized_name": "Field-Tested"
+              },
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 590,
+                "category": "rarity",
+                "internal_name": "mythical_weapon",
+                "localized_name": "Restricted"
+              },
+              "type": {
+                "id": 576,
+                "category": "type",
+                "internal_name": "csgo_type_pistol",
+                "localized_name": "Pistols"
+              },
+              "weapon": {
+                "id": 525,
+                "category": "weapon",
+                "internal_name": "weapon_deagle",
+                "localized_name": "Desert Eagle"
+              },
+              "category": {
+                "id": 620,
+                "category": "category",
+                "internal_name": "weapon_deagle",
+                "localized_name": "Desert Eagle"
+              }
+            }
+          },
+          "steam_price_cny": "8",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f586aec39da130f57f44f9GAZEtMyE05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "4.79",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "Desert Eagle | Trigger Discipline",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 32,
+        "min_rent_unit_price": "0.02",
+        "min_security_price": "5.87",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 0,
+        "pre_sell_min_price": "0",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 763350,
+        "name": "StatTrak™ M4A4 | Magnesium (Battle-Scarred)",
+        "market_hash_name": "StatTrak™ M4A4 | Magnesium (Battle-Scarred)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20M4A4%20%7C%20Magnesium%20%28Battle-Scarred%29",
+        "sell_reference_price": "4.84",
+        "sell_min_price": "4.84",
+        "buy_max_price": "4.7",
+        "sell_num": 217,
+        "buy_num": 61,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f586a2de9de425736b68cfQNoj1kaS05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "1.05",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 514,
+                "category": "exterior",
+                "internal_name": "wearcategory4",
+                "localized_name": "Battle-Scarred"
+              },
+              "quality": {
+                "id": 518,
+                "category": "quality",
+                "internal_name": "strange",
+                "localized_name": "StatTrak™"
+              },
+              "rarity": {
+                "id": 589,
+                "category": "rarity",
+                "internal_name": "rare_weapon",
+                "localized_name": "Mil-Spec Grade"
+              },
+              "type": {
+                "id": 570,
+                "category": "type",
+                "internal_name": "csgo_type_rifle",
+                "localized_name": "Rifles"
+              },
+              "weapon": {
+                "id": 534,
+                "category": "weapon",
+                "internal_name": "weapon_m4a1",
+                "localized_name": "M4A4"
+              },
+              "category": {
+                "id": 628,
+                "category": "category",
+                "internal_name": "weapon_m4a1",
+                "localized_name": "M4A4"
+              }
+            }
+          },
+          "steam_price_cny": "7.18",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f586a298a3ed4e690486deLsecd2bQ05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "4.83",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "StatTrak™ M4A4 | Magnesium",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 2,
+        "min_rent_unit_price": "0.02",
+        "min_security_price": "6.87",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 0,
+        "pre_sell_min_price": "0",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 45283,
+        "name": "Nova | Wild Six (Minimal Wear)",
+        "market_hash_name": "Nova | Wild Six (Minimal Wear)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/Nova%20%7C%20Wild%20Six%20%28Minimal%20Wear%29",
+        "sell_reference_price": "5",
+        "sell_min_price": "4.69",
+        "buy_max_price": "5",
+        "sell_num": 190,
+        "buy_num": 104,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f57f4204915abc7311700fpdQ5FC9h05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "1.29",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 511,
+                "category": "exterior",
+                "internal_name": "wearcategory1",
+                "localized_name": "Minimal Wear"
+              },
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 590,
+                "category": "rarity",
+                "internal_name": "mythical_weapon",
+                "localized_name": "Restricted"
+              },
+              "type": {
+                "id": 579,
+                "category": "type",
+                "internal_name": "csgo_type_shotgun",
+                "localized_name": "Shotguns"
+              },
+              "weapon": {
+                "id": 540,
+                "category": "weapon",
+                "internal_name": "weapon_nova",
+                "localized_name": "Nova"
+              },
+              "category": {
+                "id": 644,
+                "category": "category",
+                "internal_name": "weapon_nova",
+                "localized_name": "Nova"
+              }
+            }
+          },
+          "steam_price_cny": "8.82",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f57f42cb9861ca5317b80dNHM3r9Fa05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "4.99",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "Nova | Wild Six",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 3,
+        "min_rent_unit_price": "0.02",
+        "min_security_price": "7",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 0,
+        "pre_sell_min_price": "0",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 43270,
+        "name": "★ StatTrak™ Bayonet | Black Laminate (Minimal Wear)",
+        "market_hash_name": "★ StatTrak™ Bayonet | Black Laminate (Minimal Wear)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/%E2%98%85%20StatTrak%E2%84%A2%20Bayonet%20%7C%20Black%20Laminate%20%28Minimal%20Wear%29",
+        "sell_reference_price": "1380",
+        "sell_min_price": "1380",
+        "buy_max_price": "1130",
+        "sell_num": 14,
+        "buy_num": 4,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f80c54f7bd9f54b34f6b5fN01hqUMe05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "330",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 511,
+                "category": "exterior",
+                "internal_name": "wearcategory1",
+                "localized_name": "Minimal Wear"
+              },
+              "quality": {
+                "id": 520,
+                "category": "quality",
+                "internal_name": "unusual_strange",
+                "localized_name": "★ StatTrak™"
+              },
+              "rarity": {
+                "id": 588,
+                "category": "rarity",
+                "internal_name": "ancient_weapon",
+                "localized_name": "Covert"
+              },
+              "type": {
+                "id": 586,
+                "category": "type",
+                "internal_name": "csgo_type_knife",
+                "localized_name": "Knives"
+              },
+              "weapon": {
+                "id": 554,
+                "category": "weapon",
+                "internal_name": "weapon_bayonet",
+                "localized_name": "Bayonet"
+              },
+              "category": {
+                "id": 608,
+                "category": "category",
+                "internal_name": "weapon_bayonet",
+                "localized_name": "Bayonet"
+              }
+            }
+          },
+          "steam_price_cny": "2255.98",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f80c5321cb4acd140c3056AakeNRlR05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "1379.5",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "★ StatTrak™ Bayonet | Black Laminate",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.76",
+        "rent_num": 0,
+        "min_rent_unit_price": "0",
+        "min_security_price": "0",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 0,
+        "pre_sell_min_price": "0",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 42236,
+        "name": "USP-S | Torque (Well-Worn)",
+        "market_hash_name": "USP-S | Torque (Well-Worn)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/USP-S%20%7C%20Torque%20%28Well-Worn%29",
+        "sell_reference_price": "4.89",
+        "sell_min_price": "4.89",
+        "buy_max_price": "4.5",
+        "sell_num": 82,
+        "buy_num": 42,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f5847740dfbea732b5c9b9AfOBJYap05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "0.98",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 513,
+                "category": "exterior",
+                "internal_name": "wearcategory3",
+                "localized_name": "Well-Worn"
+              },
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 589,
+                "category": "rarity",
+                "internal_name": "rare_weapon",
+                "localized_name": "Mil-Spec Grade"
+              },
+              "type": {
+                "id": 576,
+                "category": "type",
+                "internal_name": "csgo_type_pistol",
+                "localized_name": "Pistols"
+              },
+              "weapon": {
+                "id": 552,
+                "category": "weapon",
+                "internal_name": "weapon_usp_silencer",
+                "localized_name": "USP-S"
+              },
+              "category": {
+                "id": 613,
+                "category": "category",
+                "internal_name": "weapon_usp_silencer",
+                "localized_name": "USP-S"
+              }
+            }
+          },
+          "steam_price_cny": "6.7",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f58476d90503e260dfd180j0r1hGzg05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "4.88",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "USP-S | Torque",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 0,
+        "min_rent_unit_price": "0",
+        "min_security_price": "0",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 0,
+        "pre_sell_min_price": "0",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 39709,
+        "name": "StatTrak™ UMP-45 | Riot (Minimal Wear)",
+        "market_hash_name": "StatTrak™ UMP-45 | Riot (Minimal Wear)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20UMP-45%20%7C%20Riot%20%28Minimal%20Wear%29",
+        "sell_reference_price": "4.92",
+        "sell_min_price": "4.92",
+        "buy_max_price": "4.1",
+        "sell_num": 104,
+        "buy_num": 8,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f57b00cdc44e388c61e09bL1D8z2IY05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "1.16",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 511,
+                "category": "exterior",
+                "internal_name": "wearcategory1",
+                "localized_name": "Minimal Wear"
+              },
+              "quality": {
+                "id": 518,
+                "category": "quality",
+                "internal_name": "strange",
+                "localized_name": "StatTrak™"
+              },
+              "rarity": {
+                "id": 589,
+                "category": "rarity",
+                "internal_name": "rare_weapon",
+                "localized_name": "Mil-Spec Grade"
+              },
+              "type": {
+                "id": 578,
+                "category": "type",
+                "internal_name": "csgo_type_smg",
+                "localized_name": "SMGs"
+              },
+              "weapon": {
+                "id": 551,
+                "category": "weapon",
+                "internal_name": "weapon_ump45",
+                "localized_name": "UMP-45"
+              },
+              "category": {
+                "id": 637,
+                "category": "category",
+                "internal_name": "weapon_ump45",
+                "localized_name": "UMP-45"
+              }
+            }
+          },
+          "steam_price_cny": "7.93",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f57affd11b89945f69851cjG6ool4y05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "4.91",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "StatTrak™ UMP-45 | Riot",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 0,
+        "min_rent_unit_price": "0",
+        "min_security_price": "0",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 0,
+        "pre_sell_min_price": "0",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 36573,
+        "name": "SSG 08 | Necropos (Field-Tested)",
+        "market_hash_name": "SSG 08 | Necropos (Field-Tested)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/SSG%2008%20%7C%20Necropos%20%28Field-Tested%29",
+        "sell_reference_price": "4.94",
+        "sell_min_price": "4.94",
+        "buy_max_price": "4.3",
+        "sell_num": 85,
+        "buy_num": 11,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/65f583b47ba2003b2e44b322NSLK5ib905?fop=imageView/6/f/webp/q/75",
+          "steam_price": "1.03",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 512,
+                "category": "exterior",
+                "internal_name": "wearcategory2",
+                "localized_name": "Field-Tested"
+              },
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 589,
+                "category": "rarity",
+                "internal_name": "rare_weapon",
+                "localized_name": "Mil-Spec Grade"
+              },
+              "type": {
+                "id": 570,
+                "category": "type",
+                "internal_name": "csgo_type_rifle",
+                "localized_name": "Rifles"
+              },
+              "weapon": {
+                "id": 548,
+                "category": "weapon",
+                "internal_name": "weapon_ssg08",
+                "localized_name": "SSG 08"
+              },
+              "category": {
+                "id": 631,
+                "category": "category",
+                "internal_name": "weapon_ssg08",
+                "localized_name": "SSG 08"
+              }
+            }
+          },
+          "steam_price_cny": "7.04",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/65f583b34a0a2e3cb92eb7870OdoM2L605?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "4.93",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "SSG 08 | Necropos",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 0,
+        "min_rent_unit_price": "0",
+        "min_security_price": "0",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 0,
+        "pre_sell_min_price": "0",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 33840,
+        "name": "MP7 | Cirrus (Battle-Scarred)",
+        "market_hash_name": "MP7 | Cirrus (Battle-Scarred)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/MP7%20%7C%20Cirrus%20%28Battle-Scarred%29",
+        "sell_reference_price": "4.72",
+        "sell_min_price": "4.72",
+        "buy_max_price": "4.6",
+        "sell_num": 85,
+        "buy_num": 128,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/660d822c227d492340c266090N6iIZej05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "0.99",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 514,
+                "category": "exterior",
+                "internal_name": "wearcategory4",
+                "localized_name": "Battle-Scarred"
+              },
+              "quality": {
+                "id": 516,
+                "category": "quality",
+                "internal_name": "normal",
+                "localized_name": "Normal"
+              },
+              "rarity": {
+                "id": 589,
+                "category": "rarity",
+                "internal_name": "rare_weapon",
+                "localized_name": "Mil-Spec Grade"
+              },
+              "type": {
+                "id": 578,
+                "category": "type",
+                "internal_name": "csgo_type_smg",
+                "localized_name": "SMGs"
+              },
+              "weapon": {
+                "id": 537,
+                "category": "weapon",
+                "internal_name": "weapon_mp7",
+                "localized_name": "MP7"
+              },
+              "category": {
+                "id": 638,
+                "category": "category",
+                "internal_name": "weapon_mp7",
+                "localized_name": "MP7"
+              }
+            }
+          },
+          "steam_price_cny": "6.77",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/660d822c723b14e429fb929evxarKcP805?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "4.71",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "MP7 | Cirrus",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.02",
+        "rent_num": 0,
+        "min_rent_unit_price": "0",
+        "min_security_price": "0",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 1,
+        "pre_sell_min_price": "4.81",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      },
+      {
+        "appid": 730,
+        "game": "csgo",
+        "id": 968120,
+        "name": "StatTrak™ Desert Eagle | Calligraffiti (Field-Tested)",
+        "market_hash_name": "StatTrak™ Desert Eagle | Calligraffiti (Field-Tested)",
+        "steam_market_url": "https://steamcommunity.com/market/listings/730/StatTrak%E2%84%A2%20Desert%20Eagle%20%7C%20Calligraffiti%20%28Field-Tested%29",
+        "sell_reference_price": "4.97",
+        "sell_min_price": "4.97",
+        "buy_max_price": "4.7",
+        "sell_num": 92,
+        "buy_num": 11,
+        "transacted_num": 0,
+        "goods_info": {
+          "icon_url": "https://market.fp.ps.netease.com/file/66fdf46b06bf5c5e8f47c6b6GXVLmX3c05?fop=imageView/6/f/webp/q/75",
+          "steam_price": "0.99",
+          "item_id": null,
+          "info": {
+            "tags": {
+              "exterior": {
+                "id": 512,
+                "category": "exterior",
+                "internal_name": "wearcategory2",
+                "localized_name": "Field-Tested"
+              },
+              "quality": {
+                "id": 518,
+                "category": "quality",
+                "internal_name": "strange",
+                "localized_name": "StatTrak™"
+              },
+              "rarity": {
+                "id": 589,
+                "category": "rarity",
+                "internal_name": "rare_weapon",
+                "localized_name": "Mil-Spec Grade"
+              },
+              "type": {
+                "id": 576,
+                "category": "type",
+                "internal_name": "csgo_type_pistol",
+                "localized_name": "Pistols"
+              },
+              "weapon": {
+                "id": 525,
+                "category": "weapon",
+                "internal_name": "weapon_deagle",
+                "localized_name": "Desert Eagle"
+              },
+              "category": {
+                "id": 620,
+                "category": "category",
+                "internal_name": "weapon_deagle",
+                "localized_name": "Desert Eagle"
+              }
+            }
+          },
+          "steam_price_cny": "6.77",
+          "original_icon_url": "https://market.fp.ps.netease.com/file/66fdf469abd7218f0eaff446uDlRU2xX05?fop=imageView/6/f/webp/q/75"
+        },
+        "quick_price": "4.96",
+        "market_min_price": "0",
+        "description": null,
+        "can_search_by_tournament": false,
+        "short_name": "StatTrak™ Desert Eagle | Calligraffiti",
+        "can_bargain": true,
+        "rent_unit_reference_price": "0.1",
+        "rent_num": 1,
+        "min_rent_unit_price": "0.1",
+        "min_security_price": "6",
+        "is_charm": false,
+        "keychain_color_img": null,
+        "auction_num": 0,
+        "pre_sell_num": 0,
+        "pre_sell_min_price": "0",
+        "highlight_reel_text": "",
+        "has_buff_price_history": true,
+        "bookmarked": false
+      }
+    ]
+  },
+  "msg": null
+}
