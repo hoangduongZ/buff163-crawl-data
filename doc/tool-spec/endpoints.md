@@ -103,15 +103,30 @@ Script: [`first-base/fetch_goods.py`](../first-base/fetch_goods.py)
 
 ---
 
-### 2. Sell orders của 1 item — ✅ Public
+### 2. Chi tiết 1 item — ✅ Public
+
+```
+GET /api/market/goods/info
+    ?game=csgo
+    &goods_id=33453
+```
+
+Trả về toàn bộ metadata của item: tên, icon, tags, giá Steam, `steam_price_cny`. Dùng khi cần thông tin đầy đủ cho 1 `goods_id` cụ thể mà không muốn gọi lại endpoint `/goods` với filter.
+
+---
+
+### 3. Sell orders của 1 item — ✅ Public
 
 ```
 GET /api/market/goods/sell_order
     ?game=csgo
     &goods_id=33453
     &page_num=1
-    &sort_by=default          (hoặc price.asc)
+    &sort_by=default          (hoặc price.asc / paintwear.asc)
     &allow_tradable_cooldown=1
+    &min_paintwear=0.00       (tuỳ chọn, lọc float)
+    &max_paintwear=0.07       (tuỳ chọn, lọc float)
+    &paintseed=661            (tuỳ chọn, lọc pattern)
 ```
 
 Response chứa `items[]` với từng sell order kèm `asset_info` đầy đủ:
@@ -130,7 +145,7 @@ Response chứa `items[]` với từng sell order kèm `asset_info` đầy đủ
 
 ---
 
-### 3. Buy orders của 1 item — ✅ Public
+### 4. Buy orders của 1 item — ✅ Public
 
 ```
 GET /api/market/goods/buy_order
@@ -140,7 +155,7 @@ GET /api/market/goods/buy_order
 
 ---
 
-### 4. Preview sell order (kiểm tra giá còn không) — ✅ Public
+### 5. Preview sell order (kiểm tra giá còn không) — ✅ Public
 
 ```
 GET /api/market/sell_order/preview
@@ -150,7 +165,7 @@ GET /api/market/sell_order/preview
 
 ---
 
-### 5. Mua hàng — 🔒 Auth
+### 6. Mua hàng — 🔒 Auth
 
 ```
 POST /api/market/sell_order/buy
@@ -161,7 +176,7 @@ Yêu cầu: CSRF token trong header `X-CSRFToken` + valid session + device verif
 
 ---
 
-### 6. Categories & Tags — ✅ Public
+### 7. Categories & Tags — ✅ Public
 
 ```
 GET /api/market/category?game=csgo
@@ -172,7 +187,7 @@ Crawl 1 lần, cache local. Dùng `tag_ids` từ đây để filter mạnh nhấ
 
 ---
 
-### 7. Price history — 🔒 Auth
+### 8. Price history — 🔒 Auth
 
 ```
 GET /api/market/goods/price_history/buff
