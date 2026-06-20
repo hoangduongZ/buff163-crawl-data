@@ -7,15 +7,16 @@
 
 ## 1. Endpoint Overview
 
-| Nhóm | Endpoint | Mục đích | Nên dùng? |
-|---|---|---|---|
-| Catalog | `/api/market/goods` | Danh sách item, goods_id, giá min, số lượng bán | Có |
-| Chi tiết | `/api/market/goods/info` | Detail theo goods_id | Có |
-| Lệnh bán | `/api/market/goods/sell_order` | Listing đang bán, giá, float, phase/fade | Có |
-| Lệnh mua | `/api/market/goods/buy_order` | Buy order / bid price | Có |
-| Lịch sử | `/api/market/goods/bill_order` | Sale history gần nhất | Có (crawl nhẹ) |
-| Backpack | `/api/market/backpack` | Dữ liệu inventory cá nhân | Không |
-| Giao dịch | `/api/market/goods/buy`, `/api/market/bill_order/deliver/cancel` | Mua/bán/cancel | Không |
+| Nhóm | Endpoint | Mục đích | Nên dùng? | Auth |
+|---|---|---|---|---|
+| Catalog | `/api/market/goods` | Danh sách item, goods_id, giá min, số lượng bán | Có | 🔒 Cần cookie |
+| Chi tiết | `/api/market/goods/info` | Detail theo goods_id | Có | ✅ Public |
+| Lệnh bán | `/api/market/goods/sell_order` | Listing đang bán, giá, float, phase/fade | Có | 🔒 Cần cookie |
+| Lệnh mua | `/api/market/goods/buy_order` | Buy order / bid price | Có | ✅ Public |
+| Lịch sử | `/api/market/goods/bill_order` | Sale history gần nhất | Có (crawl nhẹ) | 🔒 Cần cookie |
+| Price history | `/api/market/goods/price_history` | Lịch sử giá Buff | ⚠️ Hạn chế | 🔒 Rủi ro ban account |
+| Backpack | `/api/market/backpack` | Dữ liệu inventory cá nhân | Không | — |
+| Giao dịch | `/api/market/goods/buy`, `/api/market/bill_order/deliver/cancel` | Mua/bán/cancel | Không | — |
 
 ---
 
@@ -192,8 +193,11 @@ app/
 - Tự động buy/cancel/sell
 - Lưu Steam API key hoặc cookie thô trong database
 - Spam request toàn bộ goods_id liên tục
+- Gọi `/goods/price_history` thường xuyên — rủi ro ban account, kể cả với delay vài giây
 
 > Một số repo cộng đồng (buff2steam) cảnh báo tài khoản bị ban khi crawl quá nhanh. Crawl chậm, cache mạnh, log lỗi rõ ràng.
+
+**goods_id range:** Dota2 dùng ID ~1–39999, CS2/CSGO bắt đầu ~40000. Không brute-force. Dùng dataset `ModestSerhat/cs2-marketplace-ids` để có danh sách ID seed.
 
 ---
 

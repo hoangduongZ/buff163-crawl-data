@@ -20,25 +20,25 @@ Base URL: `https://buff.163.com`
 
 ### Tổng hợp auth requirement
 
-| # | Endpoint | Method | Public? | Ghi chú |
+| # | Endpoint | Method | Auth? | Ghi chú |
 |---|---|---|---|---|
-| 1 | `/api/market/goods` | GET | ✅ Public | Hoạt động không cần cookie, rate limit thấp hơn |
-| 2 | `/api/market/goods/info` | GET | ✅ Public | Metadata đầy đủ của 1 item theo goods_id |
-| 3 | `/api/market/goods/sell_order` | GET | ✅ Public | Trả về danh sách sell order; ẩn seller info nếu anonymous |
-| 4 | `/api/market/goods/buy_order` | GET | ✅ Public | Tương tự sell_order |
-| 5 | `/api/market/sell_order/preview` | GET | ✅ Public | Chỉ kiểm tra giá, không thao tác |
+| 1 | `/api/market/goods` | GET | 🔒 Auth | **[Verified]** Trả "Login Required" khi không có cookie |
+| 2 | `/api/market/goods/info` | GET | ✅ Public | **[Verified]** Hoạt động ẩn danh; goods_id CSGO bắt đầu ~40000 |
+| 3 | `/api/market/goods/sell_order` | GET | 🔒 Auth | **[Verified]** Trả "Login Required" khi không có cookie |
+| 4 | `/api/market/goods/buy_order` | GET | ✅ Public | **[Verified]** Hoạt động ẩn danh |
+| 5 | `/api/market/sell_order/preview` | GET | 🔒 Auth | Phụ thuộc sell_order_id từ #3 — thực tế cần auth |
 | 6 | `/api/market/sell_order/buy` | POST | 🔒 Auth | Bắt buộc session + CSRF + device verification |
-| 7 | `/api/market/category` | GET | ✅ Public | Crawl 1 lần, cache local |
-| 7 | `/api/market/itemset` | GET | ✅ Public | Crawl 1 lần, cache local |
-| 8 | `/api/market/goods/price_history/buff` | GET | 🔒 Auth | Yêu cầu session cookie; trả về 403/redirect nếu anonymous |
-| 9 | `/api/market/goods/bill_order` | GET | 🔒 Auth | Yêu cầu session cookie; trả về 403/redirect nếu anonymous |
-| 10 | `/api/market/steam_price_history` | GET | ✅ Public | Dữ liệu Steam, không cần session |
+| 7 | `/api/market/category` | GET | ❌ Dead | **[Verified]** "Path Not Found" — endpoint đã bị xóa |
+| 7 | `/api/market/itemset` | GET | ❌ Dead | **[Verified]** "Path Not Found" — endpoint đã bị xóa |
+| 8 | `/api/market/goods/price_history` | GET | 🔒 Auth | Path đúng (không có `/buff` suffix); rủi ro ban account cao |
+| 9 | `/api/market/goods/bill_order` | GET | 🔒 Auth | Yêu cầu session cookie |
+| 10 | `/api/market/steam_price_history` | GET | ❌ Dead | **[Verified]** "Path Not Found" — endpoint đã bị xóa |
 
 ---
 
 ## Endpoints
 
-### 1. Danh sách hàng trên thị trường — ✅ Public
+### 1. Danh sách hàng trên thị trường — 🔒 Auth [Verified]
 
 ```
 GET /api/market/goods
@@ -62,7 +62,7 @@ Script: [`first-base/fetch_goods.py`](../first-base/fetch_goods.py)
 | `rarity` | string | | Độ hiếm item (xem bên dưới) |
 | `sort_by` | string | | Cách sắp xếp (xem bên dưới) |
 | `search` | string | | Tìm kiếm theo tên |
-| `tag_ids` | string | | Filter theo tag ID, dùng sau khi crawl `/api/market/category` |
+| `tag_ids` | string | | Filter theo tag ID — endpoint `/category` đã dead, dùng param `category` thay thế |
 
 **Giá trị hợp lệ**
 
@@ -109,19 +109,19 @@ Script: [`first-base/fetch_goods.py`](../first-base/fetch_goods.py)
 ```
 GET /api/market/goods/info
     ?game=csgo
-    &goods_id=33453
+    &goods_id=44000
 ```
 
 Trả về toàn bộ metadata của item: tên, icon, tags, giá Steam, `steam_price_cny`. Dùng khi cần thông tin đầy đủ cho 1 `goods_id` cụ thể mà không muốn gọi lại endpoint `/goods` với filter.
 
 ---
 
-### 3. Sell orders của 1 item — ✅ Public
+### 3. Sell orders của 1 item — 🔒 Auth [Verified]
 
 ```
 GET /api/market/goods/sell_order
     ?game=csgo
-    &goods_id=33453
+    &goods_id=44000
     &page_num=1
     &sort_by=default          (hoặc price.asc / paintwear.asc)
     &allow_tradable_cooldown=1
@@ -151,12 +151,12 @@ Response chứa `items[]` với từng sell order kèm `asset_info` đầy đủ
 ```
 GET /api/market/goods/buy_order
     ?game=csgo
-    &goods_id=33453
+    &goods_id=44000
 ```
 
 ---
 
-### 5. Preview sell order (kiểm tra giá còn không) — ✅ Public
+### 5. Preview sell order (kiểm tra giá còn không) — 🔒 Auth (thực tế phụ thuộc #3)
 
 ```
 GET /api/market/sell_order/preview
@@ -177,26 +177,40 @@ Yêu cầu: CSRF token trong header `X-CSRFToken` + valid session + device verif
 
 ---
 
-### 7. Categories & Tags — ✅ Public
+### 7. Categories & Tags — ❌ Dead (Path Not Found)
 
 ```
-GET /api/market/category?game=csgo
-GET /api/market/itemset?game=csgo
+GET /api/market/category?game=csgo    ← confirmed dead 2026-06-20
+GET /api/market/itemset?game=csgo     ← confirmed dead 2026-06-20
 ```
 
-Crawl 1 lần, cache local. Dùng `tag_ids` từ đây để filter mạnh nhất ở endpoint #1.
+**Thay thế:** Dùng param `category` trực tiếp trong endpoint #1:
+
+```
+category=weapon_ak47
+category=weapon_awp
+category=weapon_m4a1
+category=weapon_m4a1_silencer
+category=knife
+category=sticker
+category=container
+```
+
+Cách lấy giá trị category chính xác: mở buff.163.com trên browser đã login → chọn filter → quan sát param `category` trong Network tab.
 
 ---
 
 ### 8. Price history — 🔒 Auth
 
 ```
-GET /api/market/goods/price_history/buff
+GET /api/market/goods/price_history
     ?game=csgo
-    &goods_id=33453
+    &goods_id=44000
     &days=30          (7 | 30 | 90)
     &currency=CNY
 ```
+
+> **⚠️ Rủi ro cao:** Cộng đồng ghi nhận tài khoản bị khóa khi gọi endpoint này thường xuyên, kể cả với delay vài giây. **Khuyến nghị:** Tự lưu snapshot từ sell/buy order mỗi lần crawl, tự tính trend 1h/24h/7d thay vì gọi price_history liên tục.
 
 ---
 
@@ -205,20 +219,20 @@ GET /api/market/goods/price_history/buff
 ```
 GET /api/market/goods/bill_order
     ?game=csgo
-    &goods_id=33453
+    &goods_id=44000
 ```
 
 > Dữ liệu lịch sử price + bill_order là nguồn tốt nhất để train time-series model.
 
 ---
 
-### 10. Lịch sử giá Steam — ✅ Public
+### 10. Lịch sử giá Steam — ❌ Dead (Path Not Found)
 
 ```
-GET /api/market/steam_price_history
-    ?game=csgo
-    &market_hash_name=AK-47%20%7C%20Redline%20(Field-Tested)
+GET /api/market/steam_price_history    ← confirmed dead 2026-06-20
 ```
+
+Endpoint này không còn hoạt động. Không có alternative trực tiếp từ Buff. Nếu cần giá Steam, dùng Steam Market API hoặc dataset cộng đồng.
 
 ---
 
@@ -228,6 +242,22 @@ GET /api/market/steam_price_history
 - `steam_price` = USD, `steam_price_cny` = CNY — hai field riêng biệt.
 - `goods_id` là key để gọi các endpoint chi tiết (#2–#9).
 - `market_hash_name` là key để cross-reference với Steam Market và các sàn khác.
+
+### goods_id range
+
+| Game | goods_id range | Ghi chú |
+|---|---|---|
+| Dota2 | ~1 – ~39999 | Verified: id=33453 là Dota2 item |
+| CS2/CSGO | ~40000+ | Verified: id=44000 là ★ Bayonet \| Night (FN) |
+
+**Không nên brute-force goods_id** — khoảng trống lớn, dễ bị block. Thay thế: dùng dataset `ModestSerhat/cs2-marketplace-ids` làm seed, verify từng id qua `/goods/info`.
+
+### Rate limit (community)
+
+- Không có rate limit chính thức từ Buff163.
+- Cộng đồng ghi nhận: bị ban sau ~10 phút khi crawl random 5–10 giây/request.
+- `/goods/price_history` rủi ro nhất — cân nhắc bỏ hoàn toàn.
+- Crawl an toàn: catalog 1 lần/ngày, sell/buy order 5–30 phút/item.
 
 **Tài liệu chi tiết response fields:** [`first-base/docs/buff163_goods_api.md`](../first-base/docs/buff163_goods_api.md)
 

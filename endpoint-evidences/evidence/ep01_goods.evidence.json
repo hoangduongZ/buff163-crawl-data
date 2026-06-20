@@ -1,0 +1,17 @@
+{
+  "endpoint": "/api/market/goods",
+  "params": {
+    "game": "csgo",
+    "page_num": 1,
+    "page_size": 3
+  },
+  "auth_used": false,
+  "status_code": 200,
+  "latency_ms": 3281,
+  "error": null,
+  "raw_response": {
+    "code": "Login Required",
+    "error": "Please login.",
+    "extra": null
+  }
+}

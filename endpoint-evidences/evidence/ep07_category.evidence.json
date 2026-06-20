@@ -1,0 +1,15 @@
+{
+  "endpoint": "/api/market/category",
+  "params": {
+    "game": "csgo"
+  },
+  "auth_used": false,
+  "status_code": 200,
+  "latency_ms": 1225,
+  "error": null,
+  "raw_response": {
+    "code": "Path Not Found",
+    "error": "Requested object does not exist",
+    "extra": null
+  }
+}

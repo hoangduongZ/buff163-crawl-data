@@ -1,0 +1,66 @@
+{
+  "endpoint": "/api/market/goods/buy_order",
+  "params": {
+    "game": "csgo",
+    "goods_id": 44000,
+    "page_num": 1
+  },
+  "auth_used": false,
+  "status_code": 200,
+  "latency_ms": 909,
+  "error": null,
+  "raw_response": {
+    "code": "OK",
+    "data": {
+      "page_num": 1,
+      "page_size": 10,
+      "total_page": 1,
+      "total_count": 1,
+      "items": [
+        {
+          "appid": 730,
+          "game": "csgo",
+          "id": "260610T1495509027",
+          "user_id": "U1092645090",
+          "num": 1,
+          "real_num": 0,
+          "frozen_num": 0,
+          "state": "progressing",
+          "goods_id": 44000,
+          "price": "2500",
+          "fee": "0",
+          "frozen_amount": "2500",
+          "created_at": 1781096924,
+          "updated_at": 1781096929,
+          "allow_tradable_cooldown": 0,
+          "tradable_cooldown": null,
+          "specific": [],
+          "icon_url": "https://market.fp.ps.netease.com/file/65f816f176d18c2313b732c1Dmlw23dz05?fop=imageView/6/f/webp/q/75",
+          "pay_expire_timeout": -1,
+          "expire_time": 1783688929,
+          "pay_method_text": "Epay",
+          "pay_method": 45,
+          "state_text": "Active",
+          "supported_pay_channels": [
+            "nepay"
+          ]
+        }
+      ],
+      "user_infos": {
+        "U1092645090": {
+          "user_id": "U1092645090",
+          "avatar": "https://g.fp.ps.netease.com/market/file/604f3732a7f2526805b844c7pT4ooXQm03?fop=imageView/6/f/webp/q/75",
+          "shop_id": "1092645090",
+          "avatar_safe": "https://g.fp.ps.netease.com/market/file/604f3732a7f2526805b844c7pT4ooXQm03?fop=imageView/6/f/webp/q/75",
+          "nickname": "Blzz",
+          "is_auto_accept": false,
+          "seller_level": 0,
+          "v_types": null,
+          "is_premium_vip": false
+        }
+      },
+      "show_pay_method_icon": true
+    },
+    "msg": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "endpoint": "/api/market/goods/sell_order",
+  "params": {
+    "game": "csgo",
+    "goods_id": 44000,
+    "page_num": 1,
+    "sort_by": "price.asc",
+    "allow_tradable_cooldown": 1
+  },
+  "auth_used": false,
+  "status_code": 200,
+  "latency_ms": 1315,
+  "error": null,
+  "raw_response": {
+    "code": "Login Required",
+    "error": "Please login.",
+    "extra": null
+  }
+}
