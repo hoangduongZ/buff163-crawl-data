@@ -2,170 +2,137 @@
 
 You are an AI coding agent supporting software development tasks and tickets.
 
-Your responsibility is not only to modify code, but also to organize Markdown documentation using a standard workflow so that you (or a future AI session) can resume the task without re-asking from the beginning.
+Your responsibility is not only to modify code, but also to organize Markdown documentation so that a future AI session can resume without re-asking from the beginning.
 
 ---
 
-## 1. Purpose
-
-For every coding task or ticket, create a dedicated folder that stores all related Markdown documents.
-
-Goals:
-* Capture the original requirement.
-* Record technical context (non-obvious only).
-* Record analysis before coding.
-* Record implementation details.
-* Record problems and debugging history.
-* Record build/test results.
-* Record handover for the next AI session.
-
----
-
-## 2. Standard Folder Structure
+## 1. Folder Structure
 
 ```txt
 docs/<ticket-id>/
 ├── README.md
-├── 00_original/
-│   └── index.md
-├── 01_context/
-│   └── context.md
-├── 02_analysis/
-│   └── plan-and-analysis_YYYYMMDD_00.md
-├── 03_implementation/
-│   └── implementation_YYYYMMDD_00.md
-├── 04_problem/                        (create only if problems occur)
-│   └── problem_YYYYMMDD_00.md
-├── 05_test/
-│   └── test-result_YYYYMMDD_00.md
-└── 99_handover/
-    └── handover.md
+├── plan_YYYYMMDD_00.md
+├── impl_YYYYMMDD_00.md       (Standard mode only)
+├── problem_YYYYMMDD_00.md    (create only if problems occur)
+├── test_YYYYMMDD_00.md       (Standard mode only)
+└── handover.md
 ```
 
 ---
 
-## 3. Folder Meaning
+## 2. Working Mode
 
-| Folder              | Purpose                                                      |
-| ------------------- | ------------------------------------------------------------ |
-| `00_original`       | Original ticket content                                      |
-| `01_context`        | Non-obvious context: branch, modules, APIs, DB tables        |
-| `02_analysis`       | Requirement analysis and implementation plan before coding   |
-| `03_implementation` | Implementation log: changed files, what, why                 |
-| `04_problem`        | Errors, root causes, investigation steps, solutions          |
-| `05_test`           | Build/test commands and results                              |
-| `99_handover`       | Session summary — enough to resume next time without re-asking |
+Choose a mode before starting the task:
+
+| Mode | When to use | Files required |
+|---|---|---|
+| **Lightweight** | ≤ 2 files changed, task < 30 min, small fix / config / copy | `plan_` → code → `handover` → `README` |
+| **Standard** | New feature, refactor, ≥ 3 files changed | `plan_` → code → `impl_` → `test_` → `handover` → `README` |
+
+In Lightweight mode: write impl summary and test result directly in `handover.md`.
 
 ---
 
-## 4. File Naming Rules
+## 3. File Meaning
 
-Stable files:
+| File | Purpose |
+|---|---|
+| `README.md` | Navigation: status + latest files |
+| `plan_YYYYMMDD_NN.md` | Requirement + context + analysis + plan |
+| `impl_YYYYMMDD_NN.md` | Changed files, what, why, key logic |
+| `problem_YYYYMMDD_NN.md` | Errors, root cause, solution |
+| `test_YYYYMMDD_NN.md` | Commands, test cases, results |
+| `handover.md` | Session summary — enough to resume next time |
+
+---
+
+## 4. File Naming
+
 ```txt
-README.md
-00_original/index.md
-01_context/context.md
-99_handover/handover.md
+plan_YYYYMMDD_00.md      (increment counter if re-created same day)
+impl_YYYYMMDD_00.md
+problem_YYYYMMDD_00.md
+test_YYYYMMDD_00.md
 ```
 
-Versioned files (date + counter, never overwrite):
-```txt
-02_analysis/plan-and-analysis_YYYYMMDD_COUNTER.md
-03_implementation/implementation_YYYYMMDD_COUNTER.md
-04_problem/problem_YYYYMMDD_COUNTER.md
-05_test/test-result_YYYYMMDD_COUNTER.md
-```
+Stable (overwrite directly): `README.md`, `handover.md`
 
-Counter starts from `00`. Increment if the same type is created multiple times on the same day.
-
-Do not use vague names: `final.md`, `new.md`, `note.md`, `latest.md`, `fix.md`.
+Do not use: `final.md`, `new.md`, `note.md`, `latest.md`.
 
 ---
 
 ## 5. Lifecycle
 
-Process each task in this order:
-
+**Lightweight:**
 ```
-1. Create folder → save requirement in 00_original/index.md
-2. Write context in 01_context/context.md
-3. Write analysis in 02_analysis/plan-and-analysis_YYYYMMDD_00.md
-4. Implement code
-5. Record implementation in 03_implementation/
-6. If problems occur → create 04_problem/ (on-demand)
-7. Record test results in 05_test/
-8. Update 99_handover/handover.md + README.md
+1. Create folder + plan_YYYYMMDD_00.md
+2. Code
+3. Update handover.md  (include impl summary + test result)
+4. Update README.md
+```
+
+**Standard:**
+```
+1. Create folder + plan_YYYYMMDD_00.md
+2. Code
+3. Create impl_YYYYMMDD_00.md
+4. If problems occur → create problem_YYYYMMDD_00.md
+5. Create test_YYYYMMDD_00.md
+6. Update handover.md
+7. Update README.md
 ```
 
 ---
 
 ## 6. Rule Before Coding
 
-Before modifying any code, these files must exist:
+`plan_` must exist before modifying any code.
 
-```txt
-00_original/index.md
-01_context/context.md
-02_analysis/plan-and-analysis_YYYYMMDD_00.md
-```
+Required content — **bullet points, max 5 lines per section, no prose**:
 
-The `plan-and-analysis` file must include:
-* Requirement
-* Current behavior
-* Expected behavior
-* Affected files / modules / APIs / DB tables
-* Implementation steps
-* Test plan
+* **Requirement** — what needs to be done
+* **Context** — branch, affected modules/APIs/DB (non-obvious only)
+* **Current behavior**
+* **Expected behavior**
+* **Implementation steps** — short ordered list
+* **Test plan** — checklist
 
-Add **Risks** or **Open Questions** only if non-trivial.
+Add **Risks / Open Questions** only if non-trivial.
 
 ---
 
-## 7. Rule During Coding
+## 7. Writing Rules
 
-Record in `03_implementation/`:
-* Changed files
-* What was changed and why
-* Key logic changes
-* API / DB / config impact if any
+Apply to **every file**:
+- Bullet points only — no paragraphs
+- Max 5 lines per section
+- Only record what is non-obvious from reading the code
+- Never repeat information already present in another file
 
-If any error or blocker occurs, create a file in `04_problem/`:
-* When it happened
-* Full error log
-* Root cause
-* Investigation steps
-* Solution or workaround
-* Current status
+**`impl_`**: table of changed files + logic not obvious from the diff.
+
+**`problem_`**: error log → root cause → fix → status.
+
+**`test_`**: commands + test case table (expected / actual / status).
 
 ---
 
 ## 8. Rule After Coding
 
-Create or update:
-```txt
-05_test/test-result_YYYYMMDD_COUNTER.md
-99_handover/handover.md
-README.md
-```
-
-`test-result` must include:
-* Commands executed
-* Test cases → expected → actual → status
-
-`handover.md` must include enough to resume next session without re-asking:
+**`handover.md`** — enough to resume next session, keep it concise:
 * Status
-* Completed work + changed files
-* Test result summary
+* What was done (bullets)
+* Changed files (table)
+* Test result (1 line)
 * Remaining tasks
-* How to continue
+* Specific next steps
+
+**`README.md`** — only update 2 things: Status + Latest Files table.
 
 ---
 
-## 9. README.md Rule
+## 9. README.md
 
-`README.md` is the navigation index. Keep it short.
-
-Required content:
 ```md
 # Ticket <ticket-id>
 
@@ -173,29 +140,28 @@ Required content:
 In Progress / Done / Blocked / Waiting Confirmation
 
 ## Summary
-One-line task summary.
+<!-- 1 line -->
 
 ## Latest Files
 
 | Type | File |
 |---|---|
-| Latest analysis | `02_analysis/...` |
-| Latest implementation | `03_implementation/...` |
-| Latest problem | `04_problem/...` (if any) |
-| Latest test result | `05_test/...` |
-| Handover | `99_handover/handover.md` |
-
-## Next Action
-Write next action here.
+| Plan | `plan_YYYYMMDD_NN.md` |
+| Implementation | `impl_YYYYMMDD_NN.md` (if any) |
+| Problem | `problem_YYYYMMDD_NN.md` (if any) |
+| Test | `test_YYYYMMDD_NN.md` (if any) |
+| Handover | `handover.md` |
 ```
+
+> No "Next Action" in README — read `handover.md` instead.
 
 ---
 
 ## 10. Core Principles
 
-* Analyze before coding.
-* Document while coding.
-* Record problems when they happen.
-* Never overwrite old versioned files.
-* Write only what is non-obvious — skip information derivable from reading the code.
+* `plan_` first, code second.
+* Bullet points, no prose, max 5 lines per section.
+* Only record what is non-obvious from code.
+* Never repeat information across files.
+* Never overwrite versioned files.
 * Every file must be readable by a fresh AI session with no prior context.

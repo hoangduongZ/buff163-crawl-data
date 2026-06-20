@@ -2,300 +2,166 @@
 
 Bạn là AI coding agent hỗ trợ xử lý task/ticket trong dự án phần mềm.
 
-Nhiệm vụ của bạn không chỉ là sửa code, mà còn phải tổ chức tài liệu Markdown theo một workflow chuẩn để con người hoặc AI agent khác có thể đọc lại, hiểu lại và tiếp tục bảo trì trong tương lai.
+Nhiệm vụ không chỉ là sửa code, mà còn tổ chức tài liệu Markdown để AI session sau có thể tiếp tục mà không cần hỏi lại từ đầu.
 
 ---
 
-## 1. Mục tiêu
-
-Với mỗi coding task hoặc ticket, phải tạo một folder riêng để lưu toàn bộ tài liệu liên quan.
-
-Mục tiêu của hệ thống này:
-
-* Lưu lại yêu cầu gốc.
-* Lưu lại bản dịch/tóm tắt tiếng Việt nếu cần.
-* Lưu lại context kỹ thuật.
-* Lưu lại phân tích trước khi code.
-* Lưu lại quá trình implement.
-* Lưu lại lỗi phát sinh.
-* Lưu lại kết quả test/build.
-* Lưu lại tổng hợp sau khi hoàn thành.
-* Lưu lại handover để người khác hoặc AI agent khác có thể tiếp tục task.
-
----
-
-## 2. Cấu trúc folder chuẩn
-
-Mỗi ticket phải được lưu tại:
-
-```txt
-docs/<ticket-id>/
-```
-
-Ví dụ:
-
-```txt
-docs/123/
-```
-
-Cấu trúc chuẩn:
+## 1. Cấu trúc folder
 
 ```txt
 docs/<ticket-id>/
 ├── README.md
-├── 00_original/
-│   ├── index.md
-│   └── index_vi.md
-├── 01_context/
-│   └── context.md
-├── 02_analysis/
-│   └── plan-and-analysis_YYYYMMDD_00.md
-├── 03_implementation/
-│   └── implementation_YYYYMMDD_00.md
-├── 04_problem/
-│   └── problem_YYYYMMDD_00.md
-├── 05_test/
-│   └── test-result_YYYYMMDD_00.md
-├── 06_resolved/
-│   └── resolved_YYYYMMDD_00.md
-└── 99_handover/
-    └── handover.md
+├── plan_YYYYMMDD_00.md
+├── impl_YYYYMMDD_00.md       (chỉ dùng ở chế độ Standard)
+├── problem_YYYYMMDD_00.md    (chỉ tạo khi có lỗi)
+├── test_YYYYMMDD_00.md       (chỉ dùng ở chế độ Standard)
+└── handover.md
 ```
 
 ---
 
-## 3. Ý nghĩa từng folder
+## 2. Chế độ làm việc
 
-| Folder              | Mục đích                                                      |
-| ------------------- | ------------------------------------------------------------- |
-| `00_original`       | Lưu ticket/yêu cầu gốc và bản dịch tiếng Việt                 |
-| `01_context`        | Lưu context hệ thống, branch, module, API, DB, file liên quan |
-| `02_analysis`       | Lưu phân tích yêu cầu và plan trước khi code                  |
-| `03_implementation` | Lưu quá trình implement, file đã sửa, lý do sửa               |
-| `04_problem`        | Lưu lỗi phát sinh, log lỗi, nguyên nhân, cách xử lý           |
-| `05_test`           | Lưu kết quả build/test/verify                                 |
-| `06_resolved`       | Lưu tổng hợp sau khi task hoàn thành                          |
-| `99_handover`       | Lưu bàn giao cuối cùng cho người/AI đọc tiếp                  |
+Chọn chế độ trước khi bắt đầu task:
+
+| Chế độ | Khi nào dùng | File cần tạo |
+|---|---|---|
+| **Lightweight** | Sửa ≤ 2 file, task < 30 phút, fix nhỏ / config / copy | `plan_` → code → `handover` → `README` |
+| **Standard** | Tính năng mới, refactor, sửa ≥ 3 file | `plan_` → code → `impl_` → `test_` → `handover` → `README` |
+
+Ở chế độ Lightweight: ghi tóm tắt impl và kết quả test trực tiếp vào `handover.md`.
+
+---
+
+## 3. Ý nghĩa từng file
+
+| File | Mục đích |
+|---|---|
+| `README.md` | Điều hướng: status + file mới nhất |
+| `plan_YYYYMMDD_NN.md` | Yêu cầu + context + phân tích + plan |
+| `impl_YYYYMMDD_NN.md` | File đã sửa, nội dung, lý do, logic chính |
+| `problem_YYYYMMDD_NN.md` | Lỗi, nguyên nhân, cách xử lý |
+| `test_YYYYMMDD_NN.md` | Lệnh chạy, test case, kết quả |
+| `handover.md` | Tóm tắt đủ để resume session sau |
 
 ---
 
 ## 4. Quy tắc đặt tên file
 
-Các file ổn định:
-
 ```txt
-README.md
-00_original/index.md
-00_original/index_vi.md
-01_context/context.md
-99_handover/handover.md
+plan_YYYYMMDD_00.md      (tăng counter nếu tạo lại trong ngày)
+impl_YYYYMMDD_00.md
+problem_YYYYMMDD_00.md
+test_YYYYMMDD_00.md
 ```
 
-Các file có version theo ngày và counter:
+Stable: `README.md`, `handover.md` — không version, ghi đè trực tiếp.
 
-```txt
-02_analysis/plan-and-analysis_YYYYMMDD_COUNTER.md
-03_implementation/implementation_YYYYMMDD_COUNTER.md
-04_problem/problem_YYYYMMDD_COUNTER.md
-05_test/test-result_YYYYMMDD_COUNTER.md
-06_resolved/resolved_YYYYMMDD_COUNTER.md
-```
-
-Counter bắt đầu từ:
-
-```txt
-00, 01, 02, 03...
-```
-
-Ví dụ:
-
-```txt
-plan-and-analysis_20260529_00.md
-plan-and-analysis_20260529_01.md
-problem_20260529_00.md
-problem_20260529_01.md
-test-result_20260529_00.md
-```
-
-Quy tắc quan trọng:
-
-* Không ghi đè file version cũ.
-* Nếu cùng một loại tài liệu được tạo nhiều lần trong cùng ngày, tăng counter.
-* Không dùng tên mơ hồ như `final.md`, `new.md`, `note.md`, `latest.md`, `fix.md`.
+Không dùng: `final.md`, `new.md`, `note.md`, `latest.md`.
 
 ---
 
-## 5. Lifecycle bắt buộc
+## 5. Lifecycle
 
-AI agent phải xử lý task theo thứ tự sau:
+**Lightweight:**
+```
+1. Tạo folder + plan_YYYYMMDD_00.md
+2. Code
+3. Cập nhật handover.md (ghi tóm tắt impl + test result)
+4. Cập nhật README.md
+```
 
-```txt
-1. Tạo folder ticket
-2. Lưu yêu cầu gốc vào 00_original/index.md
-3. Tạo bản dịch/tóm tắt tiếng Việt tại 00_original/index_vi.md nếu cần
-4. Tạo context tại 01_context/context.md
-5. Tạo plan phân tích tại 02_analysis/
-6. Thực hiện coding
-7. Ghi log implement tại 03_implementation/
-8. Nếu có lỗi, ghi vào 04_problem/
-9. Ghi kết quả test/build tại 05_test/
-10. Ghi tổng hợp hoàn thành tại 06_resolved/
-11. Cập nhật 99_handover/handover.md
-12. Cập nhật README.md
+**Standard:**
+```
+1. Tạo folder + plan_YYYYMMDD_00.md
+2. Code
+3. Tạo impl_YYYYMMDD_00.md
+4. Nếu có lỗi → tạo problem_YYYYMMDD_00.md
+5. Tạo test_YYYYMMDD_00.md
+6. Cập nhật handover.md
+7. Cập nhật README.md
 ```
 
 ---
 
 ## 6. Rule bắt buộc trước khi coding
 
-Trước khi sửa code, bắt buộc phải có:
+`plan_` phải tồn tại trước khi sửa bất kỳ dòng code nào.
 
-```txt
-00_original/index.md
-01_context/context.md
-02_analysis/plan-and-analysis_YYYYMMDD_00.md
-```
+Nội dung bắt buộc — **bullet points, tối đa 5 dòng mỗi section, không viết prose**:
 
-Không được bắt đầu coding nếu chưa có phân tích.
+* **Requirement** — cần làm gì
+* **Context** — branch, module/API/DB bị ảnh hưởng (chỉ ghi những gì không rõ từ code)
+* **Current behavior** — hiện tại đang xảy ra gì
+* **Expected behavior** — sau khi fix/feature sẽ như thế nào
+* **Implementation steps** — danh sách bước ngắn gọn
+* **Test plan** — checklist
 
-File `plan-and-analysis` phải ghi rõ:
-
-* Yêu cầu cần làm là gì.
-* Hành vi hiện tại là gì.
-* Hành vi mong muốn là gì.
-* Phạm vi ảnh hưởng.
-* File/module/API/DB có thể bị ảnh hưởng.
-* Phương án xử lý.
-* Các bước implement.
-* Kế hoạch test.
-* Rủi ro.
-* Câu hỏi cần xác nhận nếu có.
+Thêm **Risks / Open Questions** chỉ khi thực sự cần.
 
 ---
 
-## 7. Rule trong quá trình coding
+## 7. Rule ghi chép
 
-Trong quá trình coding, phải ghi lại vào `03_implementation/`:
+Quy tắc chung cho **mọi file**:
+- Dùng bullet points, không viết đoạn văn dài
+- Mỗi section tối đa 5 dòng
+- Chỉ ghi những gì không rõ từ đọc code trực tiếp
+- Không lặp lại thông tin đã có ở file khác
 
-* File đã sửa.
-* Nội dung sửa.
-* Lý do sửa.
-* Logic chính đã thay đổi.
-* API/DB/UI/config bị ảnh hưởng nếu có.
-* Ghi chú kỹ thuật quan trọng.
+**`impl_`**: bảng file đã sửa + logic không rõ từ diff.
 
-Nếu có lỗi phát sinh, phải tạo file trong `04_problem/`.
+**`problem_`**: log lỗi → nguyên nhân → cách xử lý → status.
 
-Mỗi problem file phải ghi:
-
-* Lỗi xảy ra khi nào.
-* Log lỗi đầy đủ.
-* Nguyên nhân nếu tìm được.
-* Các bước điều tra.
-* Cách xử lý.
-* Trạng thái hiện tại.
+**`test_`**: lệnh chạy + bảng test case (expected / actual / status).
 
 ---
 
 ## 8. Rule sau khi coding
 
-Sau khi coding xong, phải tạo hoặc cập nhật:
+**`handover.md`** phải đủ để tiếp tục session sau — ghi ngắn gọn:
+* Status
+* Đã làm gì (bullet)
+* File đã sửa (bảng)
+* Kết quả test (1 dòng)
+* Việc còn lại
+* Bước tiếp theo cụ thể
 
-```txt
-05_test/test-result_YYYYMMDD_COUNTER.md
-06_resolved/resolved_YYYYMMDD_COUNTER.md
-99_handover/handover.md
-README.md
-```
-
-File `test-result` phải ghi:
-
-* Môi trường test.
-* Command build/test đã chạy.
-* Test case.
-* Expected result.
-* Actual result.
-* Status.
-* Evidence nếu có.
-
-File `resolved` phải ghi:
-
-* Đã hoàn thành những gì.
-* File nào đã thay đổi.
-* Hành vi cuối cùng sau khi sửa.
-* Kết quả test.
-* Issue còn lại nếu có.
-* Follow-up task nếu có.
-
-File `handover` phải ghi đủ để một developer khác hoặc AI agent khác có thể đọc và tiếp tục task mà không cần hỏi lại từ đầu.
+**`README.md`** — chỉ cập nhật 2 thứ: Status + bảng Latest Files.
 
 ---
 
-## 9. README.md rule
-
-Mỗi ticket folder phải có `README.md`.
-
-`README.md` phải đóng vai trò bản đồ điều hướng.
-
-Nội dung bắt buộc:
+## 9. README.md
 
 ```md
 # Ticket <ticket-id>
 
 ## Status
-
 In Progress / Done / Blocked / Waiting Confirmation
 
 ## Summary
+<!-- 1 dòng -->
 
-Short task summary.
+## Latest Files
 
-## Reading Order
-
-1. `00_original/index.md`
-2. `00_original/index_vi.md`
-3. `01_context/context.md`
-4. `02_analysis/plan-and-analysis_YYYYMMDD_00.md`
-5. `03_implementation/implementation_YYYYMMDD_00.md`
-6. `04_problem/problem_YYYYMMDD_00.md`
-7. `05_test/test-result_YYYYMMDD_00.md`
-8. `06_resolved/resolved_YYYYMMDD_00.md`
-9. `99_handover/handover.md`
-
-## Latest Important Files
-
-| Type | File |
+| Loại | File |
 |---|---|
-| Latest analysis | `02_analysis/...` |
-| Latest implementation | `03_implementation/...` |
-| Latest problem | `04_problem/...` |
-| Latest test result | `05_test/...` |
-| Latest resolved | `06_resolved/...` |
-| Final handover | `99_handover/handover.md` |
-
-## Current Status
-
-Write current status here.
-
-## Next Action
-
-Write next action here.
+| Plan | `plan_YYYYMMDD_NN.md` |
+| Implementation | `impl_YYYYMMDD_NN.md` (nếu có) |
+| Problem | `problem_YYYYMMDD_NN.md` (nếu có) |
+| Test | `test_YYYYMMDD_NN.md` (nếu có) |
+| Handover | `handover.md` |
 ```
+
+> Không có "Next Action" ở README — đọc `handover.md`.
 
 ---
 
-## 10. Final mandatory principles
+## 10. Nguyên tắc cốt lõi
 
-AI agent must follow these principles:
-
-* Do not only code.
-* Analyze before coding.
-* Document while coding.
-* Record problems when they happen.
-* Record test results after testing.
-* Summarize after completion.
-* Create handover before finishing.
-* Do not overwrite old versioned Markdown files.
-* Keep all documents specific to the ticket.
-* If information is missing, write it into `Open Questions` or `Confirmation Needed`.
-* The final folder must be understandable by both humans and future AI agents.
+* `plan_` trước, code sau.
+* Bullet points, không prose, tối đa 5 dòng/section.
+* Chỉ ghi những gì không rõ từ code.
+* Không lặp thông tin giữa các file.
+* Không ghi đè file version cũ.
+* Mọi file phải đọc được bởi AI session mới không có context trước.
