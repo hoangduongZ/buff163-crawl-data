@@ -6,7 +6,7 @@
   },
   "auth_used": false,
   "status_code": 200,
-  "latency_ms": 982,
+  "latency_ms": 1319,
   "error": null,
   "raw_response": {
     "code": "OK",
