@@ -23,15 +23,16 @@ Base URL: `https://buff.163.com`
 | # | Endpoint | Method | Public? | Ghi chú |
 |---|---|---|---|---|
 | 1 | `/api/market/goods` | GET | ✅ Public | Hoạt động không cần cookie, rate limit thấp hơn |
-| 2 | `/api/market/goods/sell_order` | GET | ✅ Public | Trả về danh sách sell order; ẩn seller info nếu anonymous |
-| 3 | `/api/market/goods/buy_order` | GET | ✅ Public | Tương tự sell_order |
-| 4 | `/api/market/sell_order/preview` | GET | ✅ Public | Chỉ kiểm tra giá, không thao tác |
-| 5 | `/api/market/sell_order/buy` | POST | 🔒 Auth | Bắt buộc session + CSRF + device verification |
-| 6 | `/api/market/category` | GET | ✅ Public | Crawl 1 lần, cache local |
-| 6 | `/api/market/itemset` | GET | ✅ Public | Crawl 1 lần, cache local |
-| 7 | `/api/market/goods/price_history/buff` | GET | 🔒 Auth | Yêu cầu session cookie; trả về 403/redirect nếu anonymous |
-| 8 | `/api/market/goods/bill_order` | GET | 🔒 Auth | Yêu cầu session cookie; trả về 403/redirect nếu anonymous |
-| 9 | `/api/market/steam_price_history` | GET | ✅ Public | Dữ liệu Steam, không cần session |
+| 2 | `/api/market/goods/info` | GET | ✅ Public | Metadata đầy đủ của 1 item theo goods_id |
+| 3 | `/api/market/goods/sell_order` | GET | ✅ Public | Trả về danh sách sell order; ẩn seller info nếu anonymous |
+| 4 | `/api/market/goods/buy_order` | GET | ✅ Public | Tương tự sell_order |
+| 5 | `/api/market/sell_order/preview` | GET | ✅ Public | Chỉ kiểm tra giá, không thao tác |
+| 6 | `/api/market/sell_order/buy` | POST | 🔒 Auth | Bắt buộc session + CSRF + device verification |
+| 7 | `/api/market/category` | GET | ✅ Public | Crawl 1 lần, cache local |
+| 7 | `/api/market/itemset` | GET | ✅ Public | Crawl 1 lần, cache local |
+| 8 | `/api/market/goods/price_history/buff` | GET | 🔒 Auth | Yêu cầu session cookie; trả về 403/redirect nếu anonymous |
+| 9 | `/api/market/goods/bill_order` | GET | 🔒 Auth | Yêu cầu session cookie; trả về 403/redirect nếu anonymous |
+| 10 | `/api/market/steam_price_history` | GET | ✅ Public | Dữ liệu Steam, không cần session |
 
 ---
 
@@ -199,7 +200,7 @@ GET /api/market/goods/price_history/buff
 
 ---
 
-### 8. Lịch sử giao dịch gần đây — 🔒 Auth
+### 9. Lịch sử giao dịch gần đây — 🔒 Auth
 
 ```
 GET /api/market/goods/bill_order
@@ -211,7 +212,7 @@ GET /api/market/goods/bill_order
 
 ---
 
-### 9. Lịch sử giá Steam — ✅ Public
+### 10. Lịch sử giá Steam — ✅ Public
 
 ```
 GET /api/market/steam_price_history
@@ -295,4 +296,3 @@ Gọi thêm endpoint này để lấy 2 thông tin hiển thị trên UI mà `/a
 | Lọc theo loại / chất lượng / độ hiếm | `goods_info.info.tags.*` |
 | Đánh giá thanh khoản | `sell_num`, `buy_num` |
 | Gọi API chi tiết tiếp theo | `id` (goods_id) |
-![alt text](image.png)
