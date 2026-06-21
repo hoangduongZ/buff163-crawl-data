@@ -1,15 +1,14 @@
 {
-  "endpoint": "/api/market/goods/sell_order",
+  "endpoint": "/api/market/goods/price_history/buff",
   "params": {
     "game": "csgo",
     "goods_id": 44000,
-    "page_num": 1,
-    "sort_by": "price.asc",
-    "allow_tradable_cooldown": 1
+    "days": 30,
+    "currency": "CNY"
   },
   "auth_used": true,
   "status_code": 200,
-  "latency_ms": 1898,
+  "latency_ms": 868,
   "error": null,
   "raw_response": {
     "code": "Steam Binding Required",

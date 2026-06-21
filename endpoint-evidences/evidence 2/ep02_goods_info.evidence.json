@@ -1,0 +1,466 @@
+{
+  "endpoint": "/api/market/goods/info",
+  "params": {
+    "game": "csgo",
+    "goods_id": 44000
+  },
+  "auth_used": false,
+  "status_code": 200,
+  "latency_ms": 1319,
+  "error": null,
+  "raw_response": {
+    "code": "OK",
+    "data": {
+      "id": 44000,
+      "appid": 730,
+      "game": "csgo",
+      "name": "★ Bayonet | Night (Factory New)",
+      "short_name": "★ Bayonet | Night",
+      "super_short_name": "Night",
+      "market_hash_name": "★ Bayonet | Night (Factory New)",
+      "transacted_num": 0,
+      "description": null,
+      "steam_market_url": "https://steamcommunity.com/market/listings/730/%E2%98%85%20Bayonet%20%7C%20Night%20%28Factory%20New%29",
+      "goods_info": {
+        "icon_url": "https://market.fp.ps.netease.com/file/65f816f176d18c2313b732c1Dmlw23dz05?fop=imageView/6/f/webp/q/75",
+        "steam_price": "301.35",
+        "item_id": null,
+        "info": {
+          "tags": {
+            "type": {
+              "id": 586,
+              "category": "type",
+              "internal_name": "csgo_type_knife",
+              "localized_name": "Knives"
+            },
+            "rarity": {
+              "id": 588,
+              "category": "rarity",
+              "internal_name": "ancient_weapon",
+              "localized_name": "Covert"
+            },
+            "weapon": {
+              "id": 554,
+              "category": "weapon",
+              "internal_name": "weapon_bayonet",
+              "localized_name": "Bayonet"
+            },
+            "quality": {
+              "id": 519,
+              "category": "quality",
+              "internal_name": "unusual",
+              "localized_name": "★"
+            },
+            "exterior": {
+              "id": 510,
+              "category": "exterior",
+              "internal_name": "wearcategory0",
+              "localized_name": "Factory New"
+            }
+          }
+        },
+        "steam_price_cny": "2040.02",
+        "original_icon_url": "https://market.fp.ps.netease.com/file/65f816f07edf7bcb47250dc0ZbxNWHzq05?fop=imageView/6/f/webp/q/75",
+        "can_inspect": true,
+        "can_3d_inspect": true,
+        "can_display_inspect": true,
+        "can_preview": true,
+        "can_preview_upload": false,
+        "can_search_by_sticker": false,
+        "can_search_by_patch": false,
+        "can_search_by_tournament": false,
+        "search_tag": null,
+        "normal_icon_url": "https://market.fp.ps.netease.com/file/65f816f176d18c2313b732c1Dmlw23dz05?fop=imageView/6/f/webp/q/75",
+        "can_specific_buy": false,
+        "specific": [],
+        "can_specific_paintwear_buy": true,
+        "specific_paintwear_buying_choices": [],
+        "can_specific_fade_buy": false,
+        "specific_fade_buying_ranges": [],
+        "wear_rank_order_list": [
+          {
+            "order_type": "0",
+            "display_text": "Float ↑"
+          },
+          {
+            "order_type": "1",
+            "display_text": "Float ↓"
+          }
+        ]
+      },
+      "item_id": null,
+      "wiki_link": null,
+      "user_show_count": 298,
+      "recent_sold_count": 0,
+      "has_fade_name": false,
+      "can_buy": true,
+      "can_sort_by_heat": true,
+      "paintwear_range": [
+        "0.06",
+        "0.07"
+      ],
+      "paintwear_choices": [
+        [
+          "0.06",
+          "0.07"
+        ]
+      ],
+      "rent_day_choices": [
+        "30",
+        "60",
+        "90"
+      ],
+      "fade_choices": [
+        [
+          "80",
+          "90"
+        ],
+        [
+          "90",
+          "93"
+        ],
+        [
+          "93",
+          "95"
+        ],
+        [
+          "95",
+          "97"
+        ],
+        [
+          "97",
+          "99"
+        ],
+        [
+          "99",
+          "100"
+        ]
+      ],
+      "support_name_tag": true,
+      "support_charm": false,
+      "has_paintwear_rank": true,
+      "bookmarked": false,
+      "has_rune": false,
+      "has_overprint_name": false,
+      "asset_tags": [],
+      "asset_tags_history": [],
+      "asset_tags_buy_order": [],
+      "paintseed_filters": [
+        {
+          "type": "paintseed",
+          "name": "Paint seed",
+          "search": true,
+          "placeholder": "Enter paint seed 0-1000",
+          "max": 1000
+        }
+      ],
+      "paintseed_filters_history": [],
+      "paintseed_filters_buy_order": [],
+      "rank_types": [],
+      "deliver_deposit_filters": {
+        "list": [
+          {
+            "attribute": "has_deliver_deposit",
+            "list": [
+              {
+                "title": "All",
+                "value": 0
+              },
+              {
+                "title": "With deposit",
+                "value": 1
+              }
+            ],
+            "default_value": 0
+          }
+        ],
+        "title": "Security Deposit"
+      },
+      "history_order_type_filters": {
+        "list": [
+          {
+            "attribute": "order_type",
+            "list": [
+              {
+                "title": "All"
+              },
+              {
+                "title": "Sell",
+                "value": 1
+              },
+              {
+                "title": "Exchange",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "title": "Order type"
+      },
+      "sort_by_fields": {
+        "list": [
+          {
+            "attribute": "sort_by",
+            "default_value": "default",
+            "list": [
+              {
+                "title": "Default",
+                "value": "default"
+              },
+              {
+                "title": "Latest",
+                "value": "created.desc"
+              },
+              {
+                "title": "Hot↓",
+                "value": "heat.desc"
+              },
+              {
+                "title": "Price↑",
+                "value": "price.asc"
+              },
+              {
+                "title": "Price↓",
+                "value": "price.desc"
+              },
+              {
+                "title": "Float↑",
+                "value": "paintwear.asc"
+              },
+              {
+                "title": "Float↓",
+                "value": "paintwear.desc"
+              },
+              {
+                "title": "Time cost↑",
+                "value": "seller.asc"
+              }
+            ]
+          }
+        ],
+        "title": "Sort"
+      },
+      "rent_sort_by_fields": {
+        "list": [
+          {
+            "attribute": "sort_by",
+            "default_value": "default",
+            "list": [
+              {
+                "title": "Default",
+                "value": "default"
+              },
+              {
+                "title": "Rent↓",
+                "value": "rent_unit_price.desc"
+              },
+              {
+                "title": "Rent↑",
+                "value": "rent_unit_price.asc"
+              },
+              {
+                "title": "Security Deposit↓",
+                "value": "security_price.desc"
+              },
+              {
+                "title": "Security Deposit↑",
+                "value": "security_price.asc"
+              },
+              {
+                "title": "Rental Time↓",
+                "value": "rent_out_day.desc"
+              },
+              {
+                "title": "Rental Time↑",
+                "value": "rent_out_day.asc"
+              }
+            ]
+          }
+        ],
+        "title": "Sort"
+      },
+      "auction_sort_by_fields": {
+        "list": [
+          {
+            "attribute": "sort_by",
+            "default_value": "default",
+            "list": [
+              {
+                "title": "Default",
+                "value": "default"
+              },
+              {
+                "title": "出价人数↑",
+                "value": "bid_count.asc"
+              },
+              {
+                "title": "出价人数↓",
+                "value": "bid_count.desc"
+              },
+              {
+                "title": "截止时间↑",
+                "value": "time.asc"
+              },
+              {
+                "title": "截止时间↓",
+                "value": "time.desc"
+              },
+              {
+                "title": "Price↑",
+                "value": "price.asc"
+              },
+              {
+                "title": "Price↓",
+                "value": "price.desc"
+              },
+              {
+                "title": "SP%↑",
+                "value": "sticker_premium.asc"
+              },
+              {
+                "title": "折扣率↓",
+                "value": "discount.desc"
+              }
+            ]
+          }
+        ],
+        "title": "Sort"
+      },
+      "pre_sell_sort_by_fields": {
+        "list": [
+          {
+            "attribute": "sort_by",
+            "default_value": "default",
+            "list": [
+              {
+                "title": "Default",
+                "value": "default"
+              },
+              {
+                "title": "Price↑",
+                "value": "price.asc"
+              },
+              {
+                "title": "Price↓",
+                "value": "price.desc"
+              },
+              {
+                "title": "Time cost↑",
+                "value": "deliver_time.asc"
+              },
+              {
+                "title": "Time cost↓",
+                "value": "deliver_time.desc"
+              }
+            ]
+          }
+        ],
+        "title": "Sort"
+      },
+      "share_data": {
+        "share_task_type": 290,
+        "content": "Popular CSGO and DOTA2 skins trading market, fast and safe",
+        "thumbnail": "https://market.fp.ps.netease.com/file/660d2d10f13ef077e3b8aa03FfyIBfdM05",
+        "title": "★ Bayonet | Night (Factory New)",
+        "url": "https://buff.163.com/s/goods.html?goods_id=44000&game=csgo"
+      },
+      "containers": [
+        "CS:GO Weapon Case",
+        "CS:GO Weapon Case 2",
+        "CS:GO Weapon Case 3",
+        "Operation Bravo Case",
+        "Operation Vanguard Weapon Case",
+        "Winter Offensive Weapon Case",
+        "eSports 2013 Case",
+        "eSports 2014 Summer Case",
+        "Revolver Case",
+        "Operation Phoenix Weapon Case",
+        "eSports 2013 Winter Case"
+      ],
+      "container_type": "weaponcase",
+      "is_container": false,
+      "has_related": false,
+      "has_buff_price_history": true,
+      "allow_bundle_inventory": false,
+      "has_bundle_inventory_order": false,
+      "has_rent_order": false,
+      "relative_goods": [
+        {
+          "tag": "Factory New",
+          "tag_name": "Factory New",
+          "sell_min_price": "6666",
+          "sell_num": 2,
+          "goods_id": 44000,
+          "is_change": false,
+          "goods_name": "刺刀（★） | 噩梦之夜 (崭新出厂)",
+          "auction_num": 0
+        },
+        {
+          "tag": "Minimal Wear",
+          "tag_name": "Minimal Wear",
+          "sell_min_price": "1299.99",
+          "sell_num": 10,
+          "goods_id": 42413,
+          "is_change": false,
+          "goods_name": "刺刀（★） | 噩梦之夜 (略有磨损)",
+          "auction_num": 0
+        },
+        {
+          "tag": "Field-Tested",
+          "tag_name": "Field-Tested",
+          "sell_min_price": "889",
+          "sell_num": 28,
+          "goods_id": 42412,
+          "is_change": false,
+          "goods_name": "刺刀（★） | 噩梦之夜 (久经沙场)",
+          "auction_num": 0
+        },
+        {
+          "tag": "Well-Worn",
+          "tag_name": "Well-Worn",
+          "sell_min_price": "909",
+          "sell_num": 8,
+          "goods_id": 42414,
+          "is_change": false,
+          "goods_name": "刺刀（★） | 噩梦之夜 (破损不堪)",
+          "auction_num": 0
+        },
+        {
+          "tag": "Battle-Scarred",
+          "tag_name": "Battle-Scarred",
+          "sell_min_price": "869.5",
+          "sell_num": 19,
+          "goods_id": 42411,
+          "is_change": false,
+          "goods_name": "刺刀（★） | 噩梦之夜 (战痕累累)",
+          "auction_num": 0
+        },
+        {
+          "tag": "unusual_strange",
+          "tag_name": "★ StatTrak™",
+          "sell_min_price": "0",
+          "sell_num": 0,
+          "goods_id": 773267,
+          "is_change": true,
+          "goods_name": "刺刀（★ StatTrak™） | 噩梦之夜 (崭新出厂)",
+          "auction_num": 0
+        }
+      ],
+      "buy_num": 1,
+      "sell_num": 2,
+      "rent_num": 0,
+      "auction_num": 0,
+      "pre_sell_num": 0,
+      "buy_max_price": "2500",
+      "sell_min_price": "6666",
+      "sell_reference_price": "6666",
+      "quick_price": "6665.5",
+      "market_min_price": "0",
+      "pre_sell_min_price": "0",
+      "is_charm": false,
+      "keychain_color_img": "",
+      "show_game_cms_icon": false
+    },
+    "msg": null
+  }
+}
